@@ -24,7 +24,7 @@ class Triangle
   end
 
   def kind
-    if invalid?
+    if invalid? || illegal?
       raise TriangleError
     elsif sidesAreEqual?
       :equilateral
